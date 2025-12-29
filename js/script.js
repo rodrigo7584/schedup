@@ -1,21 +1,9 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
+// Menu
+  const button = document.querySelector('.button-menu-toggle');
+  const menu   = document.querySelector('.menu');
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  button.addEventListener('click', () => {
+    button.classList.toggle('active'); // alterna a classe no botão
+    menu.classList.toggle('active');   // alterna a classe no menu
+  });
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});

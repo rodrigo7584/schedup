@@ -5,12 +5,27 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box !important;
   font-family: 'Afacad', sans-serif;
+  --gray: #333333;
 }
 * {
   box-sizing: border-box !important;
   font-family: 'Afacad', sans-serif;
+  color: white;
+}
+.btn-green{
+  background-color: #2DAF5F;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
 }
 .swiper {
   width: 600px;
   height: 300px;
+}
+@media (max-width: 990px) {
+  .btn-green{
+    background-color: #2DAF5F;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: white!important;
+  }
 }
