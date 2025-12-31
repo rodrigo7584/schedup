@@ -9,6 +9,7 @@ body{
   align-items: center;
   padding: 2rem 0rem;
   position: relative;
+  z-index: 20;
 }
 .header .logo{
   width: 19rem;
@@ -62,6 +63,9 @@ body{
 .header .menu .menu-item{
   font-size: 1.8rem;
 }
+.header .btn-green{
+  padding: 0.8rem 2.5rem;
+}
 @media (max-width: 990px) {
   .header .menu{
     gap: 2rem;
@@ -71,9 +75,8 @@ body{
   }
 }
 @media (max-width: 770px) {
-   .header {
+  .header {
     height: 6rem;
-    border: 1px solid springgreen;
    }
   .header .button-menu-toggle{
     display: flex;
@@ -87,9 +90,19 @@ body{
     gap: 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    transform: scaleY(0) scaleX(0);
+    transform-origin: top right;
+    transition: 0.3s ease-in-out;
+  }
+  .header .menu.active{
+    transform: scaleY(1) scaleX(1);
   }
   .header .menu .menu-item{
     color: var(--gray);
     margin: 1rem;
+    font-size: 1.6rem;
+  }
+  .header .menu .btn-green{
+    color: white;
   }
 }

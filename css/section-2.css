@@ -1,0 +1,197 @@
+.section-2 {
+  padding: 7.5rem 0rem;
+}
+.section-2 .container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.section-2 .overline{
+  color: var(--gray);
+}
+.section-2 .title{
+  color: var(--gray);
+  text-align: center;
+  width: 67rem;
+}
+.section-2 .content{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+.section-2 .box-image{
+  position: relative;
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 1rem;
+  width: 42rem;
+  height: 51rem;
+  background: url('../img/fotografo.png');
+  background-size: cover;
+  background-position: center;
+}
+.section-2 .box-image::before{
+  content: '';
+  position: absolute;
+  top: 12rem;
+  left: 5rem;
+  width: 5rem;
+  height: 5rem;
+  background: url("../img/icon-lantern.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  	-webkit-animation: vibrate-1 5s linear infinite both;
+	        animation: vibrate-1 5s linear infinite both;
+}
+.section-2 .box-image::after{
+  content: '';
+  position: absolute;
+  top: 10rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  background: url("../img/icon-camera.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  	-webkit-animation: vibrate-2 5s linear infinite both;
+	        animation: vibrate-2 5s linear infinite both;
+}
+
+.section-1 .image-1{
+  grid-column: 1/2;
+  width: 100%;
+  background: url('../img/Rectangle\ 11.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1.5rem;
+  height: 25rem;
+}
+.section-1 .animated-logo{
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+}
+.section-1 .img-text{
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  -webkit-animation: rotate-center 6s linear infinite ;
+  animation: rotate-center 6s linear infinite ;
+}
+.section-1 .img-logo{
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.section-1 .image-2{
+  grid-column: 1/3;
+  width: 100%;
+  background: url('../img/asd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1.5rem;
+  height: 28rem;
+}
+.section-1 .text{
+  color: var(--gray-2);
+}
+.section-1 .text-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-1 .list-icon{
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-1 .list-icon .list-icon-item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  color: var(--gray);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+  background: #FBFBFB;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  border-left: 0.3rem solid var(--green);
+}
+.section-1 .list-icon .list-icon-item::before{
+  content: '';
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url('../img/Group\ 16.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 990px) {
+  .section-1 {
+    padding: 5rem 0rem;
+  }
+  .section-1 .content{
+    grid-template-columns:1fr;
+    justify-content: center;
+  }
+  .section-1 .list-icon .list-icon-item{
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+  }
+  .section-1 .list-icon .list-icon-item::before{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .section-1 .box-images{
+    order: 2;
+  }
+}
+@media (max-width: 770px) {
+  .section-1 .title{
+    width: 100%;
+  }
+  .section-1 .box-images{
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .section-1 .animated-logo {
+    width: 18rem;
+    height: 25rem;
+  }
+  .section-1 .img-text{
+    width: 14rem;
+    height: 14rem;
+  }
+  .section-1 .img-logo{
+    width: 10rem;
+    height: 10rem;
+  }
+  @media (max-width: 400px) {
+  .section-1 .animated-logo {
+    width: 14rem;
+    height: 25rem;
+  }
+  .section-1 .img-text{
+    width: 14rem;
+    height: 14rem;
+  }
+  .section-1 .img-logo{
+    width: 10rem;
+    height: 10rem;
+  }
+  }
+}
