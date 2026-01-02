@@ -5,6 +5,9 @@
   margin-top: -8rem;
   position: relative;
 }
+.section-hero .title{
+  font-size: 6.4rem;
+}
 .section-hero::before{
   content: '';
   position: absolute;

@@ -32,6 +32,16 @@
   line-height: 1.6;
   color: white
 }
+.btn-border-gray{
+  border: 0.1rem solid #2a2a2a;
+  padding: 1.2rem 2.3rem;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #2a2a2a
+}
 .overline{
   display: flex;
   align-items: center;
@@ -54,7 +64,7 @@
 	animation: pulsate 1s ease-in-out infinite;   
 }
 .title{
-  font-size: 6.4rem;
+  font-size: 5.5rem;
   font-weight: 500;
   line-height: 1;
   color: white;
@@ -81,6 +91,10 @@
     padding: 1rem 2rem;
     font-size: 1.6rem;
   }
+  .btn-border-gray{
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
   .overline {
     padding: 0.4rem 1rem;
     font-size: 1.4rem;
@@ -90,5 +104,10 @@
   }
   .text{
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 580px) {
+  .title {
+    font-size: 4rem;
   }
 }

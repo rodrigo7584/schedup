@@ -13,7 +13,7 @@
 .section-1 .title{
   color: var(--gray);
   text-align: center;
-  width: 74rem;
+  width: 68rem;
 }
 .section-1 .content{
   display: grid;
@@ -112,7 +112,7 @@
   }
   .section-1 .content{
     grid-template-columns:1fr;
-    justify-content: center;
+    justify-items: center;
   }
   .section-1 .list-icon .list-icon-item{
     font-size: 1.6rem;
@@ -122,6 +122,7 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  
   .section-1 .box-images{
     order: 2;
   }
