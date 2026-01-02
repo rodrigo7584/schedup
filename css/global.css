@@ -79,8 +79,15 @@
   font-weight: 700;
 }
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+}
+span.swiper-pagination-bullet {
+  width: 5rem;
+  height: 0.3rem;
+  border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+  background-color: #2DAF5F;
 }
 @media (max-width: 990px) {
   .btn-green{

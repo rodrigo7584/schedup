@@ -7,3 +7,14 @@
     menu.classList.toggle('active');   // alterna a classe no menu
   });
 
+var swiper = new Swiper(".swiper-reviews", {
+    pagination: {
+      el: ".swiper-reviews .swiper-pagination",
+      clickable: true,
+    },
+    autoplay:{
+      delay: 300,
+      disableOnInteraction: true,
+    },
+    loop:true
+  });
