@@ -1,0 +1,85 @@
+.section-5{
+  padding: 7.5rem 0rem;
+}
+.section-5 .box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.section-5 .box-image{
+  background: url('../img/man-holding-cellphone.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.section-5 .box-floating{
+  width: 100%;
+  max-width: 30rem;
+  -webkit-animation: floating 1.5s ease-out infinite alternate-reverse both;
+	animation: floating 1.5s ease-out infinite alternate-reverse both;
+}
+.section-5 .box-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-5 .title{
+  color: var(--gray);
+}
+.section-5 .text,
+.section-5 .text span{
+  color: var(--gray);
+}
+.section-5 .list-icon{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section-5 .list-icon-item{
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 2rem;
+  align-items: center;
+  color: var(--gray);
+  font-size: 1.6rem;
+}
+.section-5 .list-icon-icon{
+  width: 100%;
+}
+@media (max-width: 990px) {
+  .section-5{
+    padding: 5rem 0rem;
+  }
+}
+@media (max-width: 770px) {
+  .section-5 .box{
+    grid-template-columns: 1fr;
+  }
+  .section-5 .box-image{
+    order: 2;
+    height: 60rem;
+    background-position: center top;
+  }
+}
+@media (max-width: 580px) {
+  .section-5 .box{
+    gap: 2rem;
+  }
+  .section-5 .box-image{
+    height: 40rem;
+  }
+  .section-5 .box-floating {
+    max-width: 20rem;
+  }
+  .section-5 .list-icon-item{
+    grid-template-columns: 3.5rem 1fr;
+    gap:1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}

@@ -20,6 +20,7 @@
     background-position: 50% 100%;
   }
 }
+
 .pulsate {
 	-webkit-animation: pulsate 0.5s ease-in-out infinite both;
 	animation: pulsate 0.5s ease-in-out infinite both;    
@@ -190,5 +191,26 @@
   100% {
     -webkit-transform: translate(0);
             transform: translate(0);
+  }
+}
+
+.floating{
+	-webkit-animation: floating 1s ease-out infinite alternate-reverse both;
+	animation: floating 1s ease-out infinite alternate-reverse both;
+}
+@-webkit-keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(-30px);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translatey(0px) ;
+  }
+  100% {
+    transform: translatey(-30px);
   }
 }
