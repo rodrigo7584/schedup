@@ -14,6 +14,7 @@
   font-family: 'Afacad', sans-serif;
   color: white;
 }
+/* BUTTONS */
 .btn-green{
   background-color: var(--green);
   padding: 1.3rem 2.4rem;
@@ -42,6 +43,7 @@
   line-height: 1.6;
   color: #2a2a2a
 }
+/* TITLES E TEXTS*/
 .overline{
   display: flex;
   align-items: center;
@@ -78,6 +80,29 @@
 .text span{
   font-weight: 700;
 }
+/* LISTS */
+.list-check {
+  list-style: none; 
+  padding-left: 0;  
+}
+.list-check .list-check-item {
+  position: relative;
+  color: var(--gray);
+  font-size: 1.7rem;
+  padding: 1rem 0rem 1rem 2.5rem;
+}
+.list-check .list-check-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* centraliza verticalmente */
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('../img/icon-check.svg') no-repeat center center;
+  background-size: contain;
+}
+/* SWIPER */
 .swiper {
   width: 100%;
 }
@@ -89,6 +114,7 @@ span.swiper-pagination-bullet {
 .swiper-pagination-bullet-active{
   background-color: #2DAF5F;
 }
+
 @media (max-width: 990px) {
   .btn-green{
     padding: 1.1rem 2.1rem;
@@ -112,6 +138,10 @@ span.swiper-pagination-bullet {
   .text{
     font-size: 1.6rem;
   }
+  .list-check .list-check-item {
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem 0.5rem 2.5rem;
+  }  
 }
 @media (max-width: 580px) {
   .title {

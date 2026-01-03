@@ -1,0 +1,29 @@
+.section-6{
+  padding: 7.5rem 0rem;
+}
+.section-6 .container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-6 .overline,
+.section-6 .title,
+.section-6 .subtitle,
+.section-6 .text{
+  color: var(--gray);
+}
+.section-6 .swiper-plans{
+  width: 100%;
+}
+.section-6 .plan-card{
+  padding: 1.5rem;
+  height: 100%;
+  margin: 0.8rem 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 11px -8px rgba(0, 0, 0, 1);
+}
+.section-6 .plan-title{
+  font-size: 2.8rem;
+  color: var(--green);
+}

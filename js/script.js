@@ -7,7 +7,7 @@
     menu.classList.toggle('active');   // alterna a classe no menu
   });
 
-var swiper = new Swiper(".swiper-reviews .swiper", {
+var swiperReviews = new Swiper(".swiper-reviews .swiper", {
     slidesPerView: 1, 
     spaceBetween: 20,
     pagination: {
@@ -24,6 +24,29 @@ var swiper = new Swiper(".swiper-reviews .swiper", {
       },
       990: {
         slidesPerView: 3, 
+      }
+    },
+    loop:true
+  });
+
+  
+var swiperPlans = new Swiper(".swiper-plans .swiper", {
+    slidesPerView: 1, 
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-plans .swiper-pagination",
+      clickable: true,
+    },
+    autoplay:{
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    breakpoints:{
+      578: {
+        slidesPerView: 2, 
+      },
+      990: {
+        slidesPerView: 4, 
       }
     },
     loop:true
