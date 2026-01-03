@@ -117,4 +117,7 @@ span.swiper-pagination-bullet {
   .title {
     font-size: 4rem;
   }
+  span.swiper-pagination-bullet {
+    width: 3rem;
+  }
 }

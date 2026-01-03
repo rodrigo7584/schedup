@@ -50,6 +50,7 @@
 @media (max-width: 990px) {
   .section-hero .title {
     width: 53rem;
+    font-size: 5rem;
   }
   .section-hero .text {
     width: 63rem;
