@@ -64,3 +64,8 @@
     width:100%;
   }
 }
+@media (max-width: 400px) {
+  .section-hero .title {
+    font-size: 4rem;
+  }
+}

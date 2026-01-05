@@ -40,6 +40,7 @@
   width: 25rem;
   height: 25rem;
   position: relative;
+  overflow: hidden;
 }
 .section-1 .img-text{
   position: absolute;

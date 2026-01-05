@@ -45,6 +45,9 @@ var swiperPlans = new Swiper(".swiper-plans .swiper", {
       578: {
         slidesPerView: 2, 
       },
+      780:{
+        slidesPerView: 3, 
+      },
       990: {
         slidesPerView: 4, 
       }

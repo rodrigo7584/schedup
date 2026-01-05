@@ -13,17 +13,86 @@
   color: var(--gray);
 }
 .section-6 .swiper-plans{
+  margin-top: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-6 .swiper-plans .swiper-pagination {
+    position: relative !important;
 }
 .section-6 .plan-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   padding: 1.5rem;
-  height: 100%;
+  min-height: 54rem;
   margin: 0.8rem 0.5rem;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0px 6px 11px -8px rgba(0, 0, 0, 1);
 }
+.section-6 .plan-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .section-6 .plan-title{
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: var(--green);
+  font-weight: 600;
+}
+.section-6 .plan-subtitle{
+  color: #848A90;
+  line-height: 1;
+}
+.section-6 .plan-price{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: black;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.section-6 .plan-price::before{
+  content: 'R$';
+}
+.section-6 .plan-price::after{
+  content: '/mês';
+  font-size: 2rem;
+  color: #848A90;
+  font-weight: 400;
+  margin: 0 0 5px 8px;
+}
+.section-6 .plan-description{
+  line-height: 1;
+}
+.section-6 .plan-card .list-check{
+  margin-top: 1rem;
+}
+.section-6 .plan-card .list-check-item{
+  padding: 0.25rem 0rem 0.25rem 2.5rem;
+}
+@media (max-width: 1100px) {
+  .section-6 .plan-price {
+    font-size: 3.5rem;
+  }
+  .section-6 .plan-card{
+    min-height: 57rem;
+  }
+}
+@media (max-width: 990px) {
+  .section-6{
+    padding: 5rem 0rem;
+  }
+  .section-6 .plan-card {
+      min-height: 49rem;
+  }
+}
+@media (max-width: 580px) {
+  .section-6 .plan-card {
+      min-height: 42rem;
+  }
 }
