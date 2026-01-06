@@ -1,0 +1,95 @@
+.footer{
+  background: linear-gradient(90deg,#133128,#06161E);
+}
+.footer .content{
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+  border-bottom: 0.1rem solid #3A4A4D;
+  gap: 3rem;
+}
+.footer .logo-container{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .logo{
+  width: 19rem;
+}
+.footer .logo img{
+  width: 100%;
+}
+.footer .subtitle{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+.footer .social-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.footer .social-btn{
+  width: 3.5rem;
+}
+.footer .social-btn img{
+  width: 100%;
+}
+.footer .menu{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 9rem;
+}
+.footer .menu-item,
+.footer .contact-title{
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+}
+.footer .contact-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 22rem;
+}
+.footer .list-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .list-contact-item{
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+}
+.footer .list-contact-icon{
+  width: 100%;
+}
+.footer .copyright{
+  padding: 2rem;
+}
+.footer .copyright .text{
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 770px) {
+  .footer .content{
+    flex-wrap: wrap;
+  }
+  .footer .logo-container{
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .footer .contact-container,
+  .footer .menu{
+    width: 100%;
+  }
+}
