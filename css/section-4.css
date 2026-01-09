@@ -1,6 +1,6 @@
 .section-4{
-  padding: 7.5rem 0rem;
-  background-color: #ebebeb;
+  padding: 0rem 0rem 7.5rem 0rem;
+  background-color: #FAFBFF;
 }
 .section-4 .container{
   display: flex;
@@ -81,7 +81,7 @@
 }
 @media (max-width: 990px) {
   .section-4{
-    padding: 5rem 0rem;
+    padding: 0rem 0rem 5rem 0rem;
   }
   .section-4 .swiper-reviews .review-text{
     font-size: 1.5rem;

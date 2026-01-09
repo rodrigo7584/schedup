@@ -78,6 +78,7 @@
 .section-3 .box-btns{
   display: flex;
   gap: 2rem;
+  margin-top: 3rem;
 }
 .section-3 .box-btns a{
   width: 25rem;

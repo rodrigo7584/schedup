@@ -48,6 +48,13 @@
   color: white;
   font-weight: 600;
 }
+.footer .menu-item{
+  transition: 0.3s ease-in-out;
+}
+.footer .menu-item:hover{
+  transform: translateX(0.5rem);
+  color: var(--green);
+}
 .footer .contact-container{
   display: flex;
   flex-direction: column;

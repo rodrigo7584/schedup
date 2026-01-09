@@ -15,7 +15,7 @@ var swiperReviews = new Swiper(".swiper-reviews .swiper", {
       clickable: true,
     },
     autoplay:{
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: true,
     },
     breakpoints:{
