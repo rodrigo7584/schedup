@@ -132,9 +132,17 @@
   }
 }
 @media (max-width: 580px) {
-  .section-2 .text-content .btn-green,
-  .section-2 .text-content .btn-border-gray{
-    width: 12rem;
+  .section-2 .container{
+    align-items: flex-start;
+  }
+  .section-2 .title{
+    text-align: left;
+  }
+  .section-2 .text-content .box-btns{
+    flex-direction: column;
+  }
+  .section-2 .text-content .box-btns a{
+    width: 100%;
   }
   .section-2 .box-image{
     order: 2;

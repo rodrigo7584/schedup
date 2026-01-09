@@ -136,6 +136,20 @@
   }
 }
 @media (max-width: 580px) {
+  .section-3 .container {
+    align-items: flex-start;
+  }
+  .section-3 .title,
+  .section-3 .subtitle{
+    text-align: left;
+  }
+  .section-3 .box-btns{
+    flex-direction: column;
+    width: 100%;
+  }
+  .section-3 .box-btns a{
+    width: 100%;
+  }
   .section-3 .box .box-icon {
     width: 5rem;
     height: 5rem;

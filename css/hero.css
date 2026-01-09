@@ -64,6 +64,15 @@
     width:100%;
   }
 }
+@media (max-width: 580px) {
+  .section-hero .box-btns{
+    flex-direction: column;
+  }
+  .section-hero .box-btns a{
+    width: 100%;
+  }
+
+}
 @media (max-width: 400px) {
   .section-hero .title {
     font-size: 4rem;

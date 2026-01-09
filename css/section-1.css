@@ -137,6 +137,12 @@
   }
 }
 @media (max-width: 580px) {
+  .section-1 .container{
+    align-items: flex-start;
+  }
+  .section-1 .title{
+    text-align: left;
+  }
   .section-1 .animated-logo {
     width: 18rem;
     height: 25rem;

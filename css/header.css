@@ -63,6 +63,13 @@
 .header .btn-green{
   padding: 0.8rem 2.5rem;
 }
+.header .menu .menu-item:hover{
+  color: var(--green);
+  transition: 0.3s;
+}
+.header .menu .btn-green:hover{
+  color: white;
+}
 @media (max-width: 990px) {
   .header .menu{
     gap: 2rem;
